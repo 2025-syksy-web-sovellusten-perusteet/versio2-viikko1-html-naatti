@@ -1,1 +1,27 @@
 /* Tyhjä aloituspohja: lisää omat tyylisi. */
+nav ul {
+  list-style      : none;
+  padding         : 0%;
+  display         : flex;
+  gap             : 1em;
+  background-color: blueviolet;
+}
+
+nav li a {
+  text-decoration: none;
+  color          : chartreuse;
+}
+
+nav li a:hover {
+  color: cadetblue;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+tfoot {
+  background-color: aquamarine;
+}

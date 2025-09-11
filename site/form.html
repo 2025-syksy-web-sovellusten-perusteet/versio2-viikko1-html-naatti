@@ -1,29 +1,62 @@
-
 <!doctype html>
 <html lang="fi">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Viikko 1 – Lomake</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
   <header>
-    <h1><!-- TODO: Lomake-sivun H1 --></h1>
+    <h1>Lomakesivu</h1>
     <nav aria-label="Päävalikko">
-      <!-- TODO: Sama navigaatio kuin muilla sivuilla -->
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="table.html">Taulukko</a></li>
+        <li><a href="form.html">Lomake</a></li>
+        <li><a href="image.html">Kuva</a></li>
+      </ul>
     </nav>
   </header>
   <main>
     <!-- TODO: Luo <form>:
          - lisää label for + id parit
-         - järkevät type-arvot (email, number, tms.)
+         - järkevät type-arvot (sähköposti, number, tms.)
          - method ja action attribuutit
          - submit-painike
     -->
+    <p>Lomake, joka kysyy asioita.</p>
+    <form action="#" method="post">
+      <label for="nimi">Nimi:</label>
+      <input type="text" id="nimi" name="nimi" value="Erkki Esimerkki" required><br>
+      <label for="puhelin">Puhelin:</label>
+      <input type="tel" id="puhelin" name="puhelin" value="+358 50 12 345 67"><br>
+      <label for="sähköposti">Sähköposti:</label>
+      <input type="email" id="sähköposti" name="sähköposti" value="myname@mail.com"><br>
+      <label for="ikä">Ikä:</label>
+      <input type="number" id="ikä" name="ikä" min="18" max="120"><br>
+      <label for="lempiväri">Lempiväri:</label>
+      <input type="color" id="lempiväri" name="lempiväri" value="#ff0000"><br>
+      <label for="späivä">Syntymäpäivä:</label>
+      <input type="date" id="späivä" name="späivä" value="1990-01-01"><br>
+      <label for="saika">Syntymäaika:</label>
+      <input type="time" id="saika" name="saika" value="12:00"><br>
+      <label for="nettisivu">Nettisivu:</label>
+      <input type="url" id="nettisivu" name="nettisivu" value="https://www.example.com"><br>
+      <label for="viesti">Viesti:</label><br>
+      <textarea id="viesti" name="viesti" rows="4" cols="50">Kirjoita viesti tähän...</textarea><br>
+      <label for="tilaa">Tilaa uutiskirje:</label>
+      <input type="checkbox" id="tilaa" name="tilaa" checked><br>
+
+      <button type="submit">Lähetä</button>
+    </form>
   </main>
   <footer>
-    <!-- TODO: Footer -->
+    <br>
+    <p>Web-sovellusten perusteet -kurssi</p>
   </footer>
 </body>
+
 </html>
